@@ -37,6 +37,7 @@ To compile the program, navigate to the directory containing the source code and
 
 ```bash
 make
+
 This will compile the and run the source files and generate an executable named main.
 and you will receive the output of main.cpp as similar as demo.cpp.
 
@@ -55,8 +56,8 @@ This will compile the test files and generate an executable named myTest.
 3.1.2 Execution
 Run the tests by executing the following command:
 
-
 ./myTest
+
 This will execute the myTest.cpp file, which tests the functions using DocTest.
 
 3.2 Cleaning Up
@@ -64,4 +65,4 @@ To delete compiled files, executables, and object files, type:
 
 
 make clean
-This command will remove all compiled files, executables (including myprogram and myTest), and object files from the directory.
+This command will remove all compiled files, executables (including main and myTest), and object files from the directory.
