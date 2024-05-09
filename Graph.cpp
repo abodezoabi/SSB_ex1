@@ -1,3 +1,8 @@
+/*
+ * ID: 211407424
+ * abodezoabi2000@gmail.com
+ */
+
 #include "Graph.hpp"
 #include <iostream>
 #include <vector>
@@ -13,9 +18,7 @@ namespace ariel {
                 throw std::invalid_argument("Invalid graph: The graph is not a square matrix.");
             }
         }
-        if (matrix.size() != matrix[0].size()) {
-            throw std::invalid_argument("Invalid graph: The graph is not a square matrix.");
-        }
+       
 
         numVertices = static_cast<int>(matrix.size()); // Convert size_type to int
         adjacencyMatrix = matrix;

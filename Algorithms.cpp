@@ -1,3 +1,8 @@
+/*
+ * ID: 211407424
+ * abodezoabi2000@gmail.com
+ */
+
 #include "Algorithms.hpp"
 #include "Graph.hpp"
 #include <queue>
@@ -135,7 +140,7 @@ namespace ariel {
     // Check if the graph is bipartite using BFS
     std::string Algorithms::isBipartite(ariel::Graph g) {
         int n = g.getNumVertices();
-        std::vector<int> color(n, -1);  // -1: no color, 0: Group A, 1: Group B
+        std::vector<int> color(n, -1);  // -1: no color
 
         // Perform BFS from each vertex
         for (int start = 0; start < n; ++start) {
@@ -195,13 +200,13 @@ namespace ariel {
         return result;
     }
 
-    // Check for the presence of a negative cycle using Bellman-Ford algorithm
+    // Check for a negative cycle using Bellman-Ford algorithm
     bool Algorithms::negativeCycle(ariel::Graph g) {
         int n = g.getNumVertices();
         std::vector<int> dist(n, INT_MAX);
         std::vector<int> parent(n, -1);
 
-        // Iterate over all vertices as potential sources
+        // Iterate over all vertices 
         for (int source = 0; source < n; source++) {
             // Reset distance and parent vectors
             std::fill(dist.begin(), dist.end(), INT_MAX);
